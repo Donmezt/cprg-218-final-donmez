@@ -143,7 +143,7 @@
 
 
 
-  
+
   /*Testimonials*/
   
   .testimonials {
@@ -177,4 +177,29 @@
     .testimonials {
         grid-template-columns: 1fr;
     }
+}
+
+/*Dining*/
+section.restaurant, section.intro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section.restaurant ul {
+    margin-top: 15px;
+}
+
+section.restaurant ul li {
+    color: #444;
+}
+
+a {
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
