@@ -238,16 +238,60 @@ a:hover {
 
 /*Spa CSS */ 
 
-.highlight-services {
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3 rem;
+.spa-highlights {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.highlight-card {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.highlight-card:hover {
+  transform: scale(1.03);
+}
+
+.highlight-card .highlight-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+
+.scrolling-row .small-card {
+  flex: 0 0 auto;
+  width: 200px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .scrolling-row {
-  display:flex;
+  display: flex;
   overflow-x: auto;
-  gap: 1.5rem;
+  gap: 1rem;
   padding: 1rem 0;
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  color: #007b9a;
 }
