@@ -304,7 +304,7 @@ a:hover {
   border: 1px solid #ddd;
 }
 
-.important-notes .section title {
+.important-notes .important-title {
   font-size:2rem;
   font-weight: bold;
   color: #d36f6f;
@@ -334,6 +334,37 @@ top:0;
 font-size: 1.5rem;
 }
 
+.wellness-program {
+  background-color: #f4f9f9;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wellness-program:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.wellness-program .wellness-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2a4d56;
+  margin-bottom: 1rem;
+}
+
+.wellness-program ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+.wellness-program ul li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
 
 @media screen and (max-width: 768px) {
   header .site-header {
