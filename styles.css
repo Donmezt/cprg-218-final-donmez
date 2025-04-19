@@ -1,249 +1,275 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #333;
-    background-color: #f9f9f9;
-    line-height: 1.6;
-  }
-  
-  a {
-    color: #006c8c;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
 
-  .site-header {
-    background-color: #007b9a;
-    color: white;
-    padding: 1.5rem 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .logo {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .weather-info {
-    margin-bottom: 1rem;
-  }
-  
+a {
+  color: #006c8c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.site-header {
+  background: url('/images/pink-sand.jpg') center/cover no-repeat;
+  color: rgb(255, 0, 157);
+  padding: 2rem 0 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+  margin:1rem;
+}
+
+.site-header .header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  position: relative; 
+}
+
+.site-header .logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.logo-center {
+  max-width: 150px;
+  height: auto;
+}
+
+.site-header .logo span {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.site-header .weather-info {
+  margin-bottom: 1rem;
+}
+
+.site-header .logo-center {
+  max-width: 400px;
+  height: auto; 
+  flex: 0 1 auto; 
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.8); /* Light background to contrast with header image */
+  padding: 0.75rem 1rem;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav a {
+  color: #ff7b00;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #e2f4f8;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+.highlights {
+  padding: 3rem 0;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  color: #007b9a;
+}
+
+.card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  display: block;
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card figcaption {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card figcaption strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.site-footer {
+  background-color: #007b9a;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
   .main-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .main-nav a {
-    color: white;
-    font-weight: bold;
-  }
-
-  .hero {
-    text-align:center;
-    padding: 2rem 1rem;
-    background: #e2f4f8
-    border-radius: 8px;
-    margin-top: 3rem 0;
-  }
-
-  .highlights {
-    padding: 3rem 0;
-  }
-
-  .section-subtitle {
-    text-align: center;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-    color: #007b9a;
+      flex-direction: column;
+      gap: 0.5rem;
   }
 
   .card-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 6px;
-    display: block;
-  }
-
-  .card-grid {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax (250px, 1fr));
-    gap: 2rem;
-  }
-
-  .card {
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-  }
-
-  .card:hover {
-    transform: translateY(-5px);
-  }
-
-  .card figcaption {
-    padding: 1rem;
-    text-align: center;
-  }
-
-  .card figcaption strong {
-    display:block;
-    font-size: 1.1rem;
-    color: #444;
-    margin-bottom: 0.5rem;
-  }
-
-  .site-footer {
-    background-color: #007b9a;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: 600px) {
-    .main-nav {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-  
-    .card-img {
       height: 140px;
-    }
   }
+}
 
+/* Testimonials */
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
 
+.testimonial {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
+.testimonial .quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
 
-  /*Testimonials*/
-  
+@media (max-width: 768px) {
   .testimonials {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    gap: 20px;
-    margin-top: 30px;
+      grid-template-columns: 1fr;
   }
-
-  .testimonial {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .testimonial:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-
-  .testimonial .quote {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #555;
-    margin-bottom: 10px;
-  }
-
-  @media (max-width: 768px) {
-    .testimonials {
-        grid-template-columns: 1fr;
-    }
 }
 
-/*Dining*/
-
+/* Dining */
 ul {
-    color: #000000;
-    list-style-type: none;
+  color: #000000;
+  list-style-type: none;
 }
+
 h3 {
   font-weight: 200;
-    font-size:1.5rem;
-    color: #6893ff;
-    margin-top: 30px;
+  font-size: 1.5rem;
+  color: #6893ff;
+  margin-top: 30px;
 }
 
 h2 {
   font-weight: 300;
   text-align: center;
-  color:#ff7b00
+  color: #ff7b00;
 }
-.res {
 
-    font-size: 1.rem;
-    line-height: 1.6;
-    color: #ffffff;
-    margin-bottom: 1rem;
+.res {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 1rem;
 }
-section.restaurant, section.intro {
-    background-color: #a0c5ff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+section.restaurant,
+section.intro {
+  background-color: #a0c5ff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .restaurant1 {
-    background-color: lightcoral;
-    border-radius: 10px;
-    padding: 0.5rem;
+  background-color: lightcoral;
+  border-radius: 10px;
+  padding: 0.5rem;
 }
+
 .restaurant2 {
-    background-color: lightgreen;
-    border-radius: 10px;
-    padding: 0.5rem;
+  background-color: lightgreen;
+  border-radius: 10px;
+  padding: 0.5rem;
 }
+
 .restaurant3 {
-    background-color: lightseagreen;
-    border-radius: 10px;
-    padding: 0.5rem;
+  background-color: lightseagreen;
+  border-radius: 10px;
+  padding: 0.5rem;
 }
+
 section.restaurant ul {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 section.restaurant ul li {
-    color: #444;
+  color: #444;
 }
 
 a {
-    color: #1abc9c;
-    text-decoration: none;
+  color: #1abc9c;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
-/*Spa CSS */ 
-
+/* Spa CSS */
 .spa-highlights {
   display: flex;
   gap: 20px;
@@ -260,7 +286,7 @@ a:hover {
   background-position: center;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
 }
 
@@ -273,10 +299,9 @@ a:hover {
   bottom: 0;
   width: 100%;
   padding: 1rem;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
-
 
 .scrolling-row .small-card {
   flex: 0 0 auto;
@@ -284,7 +309,7 @@ a:hover {
   background: #fff;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -311,10 +336,10 @@ a:hover {
 }
 
 .important-notes .important-title {
-  font-size:2rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #d36f6f;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
 
 .important-notes ul {
@@ -328,16 +353,15 @@ a:hover {
   padding-left: 1.5rem;
   position: relative;
   margin-bottom: 0.5rem;
-
 }
 
 .important-notes ul li::before {
-content:  "⚠️";
-color:#d36f6f;
-position: absolute;
-left:0;
-top:0;
-font-size: 1.5rem;
+  content: "⚠️";
+  color: #d36f6f;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
 }
 
 .wellness-program {
@@ -374,111 +398,82 @@ font-size: 1.5rem;
 
 @media screen and (max-width: 768px) {
   header .site-header {
-    padding: 1rem;
+      padding: 1rem;
   }
 
   header .main-nav a {
-    display:block;
-    margin: 0.5rem 0;
-    text-align: center;
+      display: block;
+      margin: 0.5rem 0;
+      text-align: center;
   }
 
   .spa-grid {
-    grid-template-columns: 1fr;
-    gap:1.5rem;
-  }
-
-  .spa-card {
-    text-align: center;
-  }
-
-  .highlight-services {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .scrolling-row .card {
-    width:100%;
-  }
-
-  .spa-card.highlight ing {
-    max-width: 100%;
-    height: 100%;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
   }
 }
 
-/*Accomodations page*/
-
-
-.guest-title {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: #2a4d56;
-}
+/* Guest Rooms*/
 
 .accommodation-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .accommodation-card {
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.accommodation-img {
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-}
-
-.accommodation-info {
+  transition: transform 0.3s ease;
   padding: 1rem;
 }
 
-.accommodation-fino h3 {
-  font-size: 1.4rem;
-  margin-bottom:0.5rem;
-  color: #1c3b3b;
-
-}
-
-.accommodation-info p {
-  margin-bottom:0.75rem;
-  color:#444;
-  line-height: 1.5;
-}
-
-.accommodation-info ul {
-  list-style-type: disc;
-}
-
-.accomodation-info ul li {
-  margin-bottom: 0.4rem;
-  font-size: 0.95rem;
-}
-
 .accommodation-card:hover {
-  transform: translateY(-4px);
-  transition: transform 0.2s ease;
+  transform: translateY(-5px);
 }
 
-
-.accommodation-card1 {
-  background-color: #fff;
+.accommodation-card img {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  display: flex;
-  flex-direction:column;
-  justify-content: space-between;
-  height: 100%;
+  margin-bottom: 1rem;
 }
+
+.accommodation-card h3 {
+  font-size: 1.4rem;
+  color: #006c8c;
+  margin-bottom: 0.5rem;
+}
+
+.accommodation-card p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.accommodation-card ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #333;
+}
+
+.accommodation-card li {
+  margin-bottom: 0.3rem;
+}
+
+.guest-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #006c8c;
+}
+
+/*Activities*/
+
+
+
+
 
