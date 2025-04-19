@@ -186,13 +186,16 @@ ul {
     list-style-type: none;
 }
 h3 {
+  font-weight: 200;
     font-size:1.5rem;
-    color: #ffffff;
+    color: #6893ff;
     margin-top: 30px;
 }
 
 h2 {
+  font-weight: 300;
   text-align: center;
+  color:#ff7b00
 }
 .res {
 
@@ -406,6 +409,13 @@ font-size: 1.5rem;
 
 /*Accomodations page*/
 
+
+.guest-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #2a4d56;
+}
+
 .accommodation-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -432,3 +442,43 @@ font-size: 1.5rem;
 .accommodation-info {
   padding: 1rem;
 }
+
+.accommodation-fino h3 {
+  font-size: 1.4rem;
+  margin-bottom:0.5rem;
+  color: #1c3b3b;
+
+}
+
+.accommodation-info p {
+  margin-bottom:0.75rem;
+  color:#444;
+  line-height: 1.5;
+}
+
+.accommodation-info ul {
+  list-style-type: disc;
+}
+
+.accomodation-info ul li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.accommodation-card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.2s ease;
+}
+
+
+.accommodation-card1 {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  height: 100%;
+}
+
