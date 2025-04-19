@@ -311,4 +311,22 @@ a:hover {
     grid-template-columns: 1fr;
     gap:1.5rem;
   }
+
+  .spa-card {
+    text-align: center;
+  }
+
+  .highlight-services {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .scrolling-row .card {
+    width:100%;
+  }
+
+  .spa-card.highlight ing {
+    max-width: 100%;
+    height: 100%;
+  }
 }
