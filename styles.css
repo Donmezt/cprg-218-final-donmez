@@ -295,3 +295,20 @@ a:hover {
   font-size: 1.5rem;
   color: #007b9a;
 }
+
+@media screen and (max-width: 768px) {
+  header .site-header {
+    padding: 1rem;
+  }
+
+  header .main-nav a {
+    display:block;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .spa-grid {
+    grid-template-columns: 1fr;
+    gap:1.5rem;
+  }
+}
